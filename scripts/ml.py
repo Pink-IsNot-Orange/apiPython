@@ -26,7 +26,7 @@ y_test = y[imgSet+1:]
 clf = DecisionTreeClassifier()
 clf.fit(x_train, y_train)
 y_pred = clf.predict(x_test)
-print(f'Decision Tree Classifier - Entrenada con {imgSet} muestras: {100*round(accuracy_score(y_test, y_pred), 3)}%')
+print(f'Decision Tree Classifier - Entrenada con {imgSet} muestras: {100*round(accuracy_score(y_test, y_pred), 3)}% ')
 
 #CREACION DE LA RED NEURONAL
 """ mlp = MLPClassifier(max_iter=200)
